@@ -47,9 +47,32 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-group :test do
-   gem 'cucumber-rails', require: false
-end
-
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+#new gems
+gem 'bcrypt'
+gem 'rack-cors', :require => 'rack/cors'
+gem 'api-versions'
+gem 'responders'
+gem 'sparkpost_rails'
+gem "paperclip", "~> 5.0.0"
+gem 'figaro'
+gem 'aws-sdk', '>= 2.0.34'
+
+group :development, :test do
+  gem 'pry-rails'
+  gem 'faker'
+  gem "letter_opener"
+end
+
+group :test do
+  gem 'cucumber-rails', require: false
+  gem 'simplecov', require:  false
+  gem 'shoulda'
+  gem 'rspec-rails'
+  gem 'database_cleaner', '~> 1.6.0'
+  gem 'fuubar'
+  gem 'webmock'
+  gem 'factory_bot_rails'
+end
