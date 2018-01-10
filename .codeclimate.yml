@@ -1,0 +1,34 @@
+
+engines:
+  brakeman:
+    enabled: true
+  rubocop:
+    enabled: true
+  bundler-audit:
+    enabled: true
+  reek:
+    enabled: true
+  duplication:
+    enabled: true
+    config:
+      languages:
+      - ruby
+ratings:
+  paths:
+  - "app/**/*"
+  - "lib/**/*"
+  - "**.rb"
+  - "Gemfile"
+  - "Gemfile.lock"
+exclude_paths:
+- "config/**/*"
+- "client/**/*"
+- "public/**/*"
+- "spec/**/*"
+- "bin/**/*"
+- "config.ru"
+- "db/**/*"
+- "README.rdoc"
+- "app/assets/*"
+- "vendor/assets/*"
+- "**.rake"
