@@ -11,3 +11,4 @@ application up and running.
 5. Setup Rspec with simplecov, bullet, db cleaner, and fuubar
 6. Important Modules and Authentication Setup
 7. Allowed cross origin request
+8. Application.yml with Figaro
