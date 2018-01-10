@@ -8,4 +8,4 @@ application up and running.
 3. added codeclimate and circleci config
 4. Added required gems
 4. Added Ruby gemset and Ruby version
-5. Setup Rspec
+5. Setup Rspec with simplecov, bullet, db cleaner, and fuubar
