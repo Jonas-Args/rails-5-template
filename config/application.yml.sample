@@ -1,3 +1,4 @@
+sparkpost_api_key: testSparkpostKey
 development:
   MY_DOMAIN: 'your_domain'
 test:

@@ -9,7 +9,7 @@ module TokenProcessor
   def destroy_token
     token = self.access_tokens.find_by(token: self.current_token)
     if token.present?
-      token.update_attribute(:deleted_at, Time.current)
+      token.destroy
     else
       false
     end

@@ -11,3 +11,13 @@ application up and running.
 5. Setup Rspec with simplecov, bullet, db cleaner, and fuubar
 6. Important Modules and Authentication Setup
 7. Allowed cross origin request
+
+Branch_1
+1. User Login, Registration, Forgot Password, Reset Password
+Gem
+  - Paperclip
+    User Profile with S3 Configuration
+
+  - Sparkpost
+    Welcome Email upon Registration
+    Email during forgot Password
