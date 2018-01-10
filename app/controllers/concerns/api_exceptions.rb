@@ -70,5 +70,14 @@ module ApiExceptions
       render json: {error: "You need to renew your password"}, status: 411
     end
 
+    #
+    # new errors
+    #
+
+    class InvalidEmailError < StandardError; end
+    rescue_from InvalidEmailError do
+      render json: { error: 'Email address does not match any account' }, status: 401
+    end
+
   end
 end
