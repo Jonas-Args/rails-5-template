@@ -1,0 +1,5 @@
+test:
+  host: localhost
+  adapter: postgresql
+  encoding: unicode
+  url: <%= ENV['DATABASE_URL '] %>
