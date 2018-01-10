@@ -1,0 +1,5 @@
+development:
+  MY_DOMAIN: 'your_domain'
+test:
+  MY_DOMAIN: 'your_domain'
+production:
